@@ -25,7 +25,7 @@ fs.writeFile('file.txt', 'Hello World!', function (err) {
 console.log('\n--- 3. Web Server ---');
 const server = http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('Hello World!');
+    res.write(`<h1 style="color: blue; font-size: 40px">Hello world</h1>`);
     res.end();
 });
 server.listen(8080, () => {
